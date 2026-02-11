@@ -1,0 +1,191 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,english]{babel}
+\usepackage{lmodern}
+\usepackage{geometry}
+\usepackage{todonotes}
+\geometry{margin=2.5cm}
+
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{microtype}
+\usepackage{enumitem}
+
+\title{Experimento 1 - CS}
+\author{Proyecto AI4PROSA}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Este informe presenta los resultados de la primera iteración del diseño experimental para validar un tutor basado en inteligencia artificial (IA) aplicado a la Lección 2 (\textit{``Obligaciones''}) del módulo de seguridad de productos infantiles. Siguiendo el diseño experimental proporcionado, se reportan los hallazgos de los dos instrumentos disponibles en esta iteración: (i) test de contenidos (eficacia del aprendizaje) y (ii) cuestionario cuantitativo de alumnos (personalización y autonomía percibidas). Los resultados muestran un rendimiento alto en el test de contenidos y percepciones favorables de personalización y autonomía, cumpliéndose los criterios de éxito preliminares definidos en el diseño. Se discuten implicaciones, limitaciones y líneas de mejora para iteraciones posteriores.
+\end{abstract}
+
+\section{Introducción}
+El diseño experimental de primera iteración plantea como pregunta central si es posible confiar en un tutor IA para apoyar la adquisición de conocimientos, reduciendo la carga del docente y aumentando la personalización del aprendizaje. En esta iteración, el objetivo operativo es validar el tutor IA desarrollado para la Lección 2 (\textit{``Obligaciones''}) con un grupo piloto de estudiantes en un entorno controlado, con una sesión de uso de hasta dos horas y evaluación posterior inmediata mediante instrumentos definidos en el diseño.
+
+En el presente informe se documentan exclusivamente los resultados disponibles para esta iteración: el \textbf{test de contenidos} y el \textbf{cuestionario cuantitativo de alumnos}. No se incluyen resultados del cuestionario del profesor ni de la evaluación cualitativa grupal, al no disponerse de dichos datos en esta entrega.
+
+\section{Método}
+\subsection{Diseño experimental (resumen operativo)}
+La sesión se estructura en tres fases: (1) pre-experimento (preparación técnica y logística), (2) experimento (uso del tutor IA en sesión de aprendizaje autónomo, con el docente en rol observador y mínima intervención académica), y (3) post-experimento (evaluación inmediata mediante instrumentos). El contexto establece estudiantes universitarios en materias relacionadas con seguridad de productos infantiles, con duración máxima de 2 horas y un mínimo previsto de N=5 estudiantes.
+
+\subsection{Participantes}
+Participaron \textbf{N=5} estudiantes en el test de contenidos. Para el cuestionario cuantitativo de alumnos se dispone de \textbf{N=3} respuestas completas en los datos entregados.
+
+\subsection{Instrumentos}
+De acuerdo con el diseño experimental, se emplearon los siguientes instrumentos disponibles:
+
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item \textbf{Instrumento 1: Test de contenidos (eficacia).} Medición individual post-sesión de la eficacia del aprendizaje. Criterio de éxito preliminar: \textbf{media $\geq 7/10$}.
+  \item \textbf{Instrumento 2: Cuestionario cuantitativo para alumnos.} Medición individual post-sesión mediante ítems tipo Likert (1--5) para estimar \textbf{personalización percibida} y \textbf{autonomía}. Criterios de éxito preliminares: \textbf{promedio $\geq 3.5/5$} en personalización y \textbf{promedio $\geq 3.5/5$} en autonomía.
+\end{itemize}
+
+\subsection{Criterios de éxito (según el diseño)}
+Este informe evalúa el cumplimiento de los criterios preliminares definidos en el diseño para:
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item \textbf{Aprendizaje efectivo:} media del test $\geq 7/10$.
+  \item \textbf{Personalización percibida:} promedio $\geq 3.5/5$.
+  \item \textbf{Autonomía lograda:} promedio $\geq 3.5/5$.
+\end{itemize}
+
+\section{Resultados}
+\todo{Ver los resultados}
+\subsection{Test de contenidos (eficacia del aprendizaje)}
+El test de contenidos fue completado por \textbf{N=5} estudiantes. Las puntuaciones obtenidas fueron:
+\[
+8,\; 9,\; 9,\; 10,\; 10
+\]
+La Tabla~\ref{tab:content-test} resume los estadísticos descriptivos principales.
+
+\begin{table}[h!]
+\centering
+\caption{Resultados del test de contenidos (N=5).}
+\label{tab:content-test}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+\textbf{Métrica} & \textbf{Valor} & \textbf{Escala} \\
+\midrule
+Media & 9.2 & /10 \\
+Mínimo & 8 & /10 \\
+Máximo & 10 & /10 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\noindent
+\textbf{Cumplimiento del criterio:} La media (9.2/10) supera ampliamente el umbral establecido (7/10). No se registran suspensos ni puntuaciones próximas al umbral mínimo. \todo{En contenido se cumplen y con margen}
+
+
+\subsection{Cuestionario cuantitativo de alumnos: análisis por dimensiones}
+
+\paragraph{Definición de dimensiones.}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item \textbf{D1 --- Personalización percibida:} P1, P2, P3, P6.
+  \item \textbf{D2 --- Autonomía del alumno:} P4, P5.
+  \item \textbf{D3 --- Usabilidad y claridad:} P7, P8.
+  \item \textbf{D4 --- Aceptación e intención de uso:} P9, P10.
+\end{itemize}
+
+\paragraph{Estadísticos por dimensión.}
+La Tabla~\ref{tab:student-dimensions} resume la media y la desviación típica (DT) en cada dimensión. Para las dimensiones con criterio preliminar en el diseño (personalización y autonomía), se indica su cumplimiento respecto al umbral \textbf{$\geq 3.5/5$}.
+
+\begin{table}[h!]
+\centering
+\caption{Resultados por dimensión (N=3; escala 1--5).}
+\label{tab:student-dimensions}
+\begin{tabular}{@{}p{6.4cm}ccc@{}}
+\toprule
+\textbf{Dimensión} & \textbf{Media} & \textbf{DT} & \textbf{Criterio ($\geq$3.5)} \\
+\midrule
+D1 Personalización percibida & 4.33 & 0.98 & Cumple \\
+D2 Autonomía del alumno   & 3.50 & 1.22 & Cumple (ajustado) \\
+D3 Usabilidad y claridad & 3.67 & 1.37 & -- \\
+D4 Aceptación e intención de uso  & 3.67 & 1.75 & -- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Resultados por ítem.}
+La Tabla~\ref{tab:student-items} presenta medias y DT por cada cuestión.
+
+\begin{table}[h!]
+\centering
+\caption{Resultados por ítem Likert (N=3; escala 1--5).}
+\label{tab:student-items}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+\textbf{Ítem} & \textbf{Media} & \textbf{DT} \\
+\midrule
+P1 (adaptación al ritmo) & 4.33 & 1.15 \\
+P2 (explicaciones alternativas) & 4.33 & 1.15 \\
+P3 (respuesta a necesidades individuales) & 3.67 & 1.15 \\
+P4 (resolver dudas sin profesor) & 3.33 & 1.15 \\
+P5 (capacidad de aprender autónomamente) & 3.67 & 1.53 \\
+P6 (trabajo a ritmo propio, sin depender del grupo) & 5.00 & 0.00 \\
+P7 (facilidad de uso inicial) & 3.67 & 1.53 \\
+P8 (claridad de explicaciones) & 3.67 & 1.53 \\
+P9 (preferencia vs.\ clase tradicional) & 3.33 & 2.08 \\
+P10 (intención de uso en otros temas) & 4.00 & 1.73 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Indicadores complementarios (cuestiones 11 y 12)}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item \textbf{P11 --- Frecuencia de ayuda del docente durante la sesión:} 2 estudiantes reportaron necesitar ayuda \textit{1--2 veces} y 1 estudiante reportó \textit{3--5 veces}.
+  \item \textbf{P12 --- Preferencia futura:} 2 estudiantes preferirían estudiar de nuevo el tema con el \textit{tutor IA}; 1 estudiante preferiría una \textit{clase tradicional con docente}.
+\end{itemize}
+
+Los resultados muestran una \textbf{personalización percibida alta} (D1=4.33), cumpliendo holgadamente el criterio del diseño. La \textbf{autonomía} (D2=3.50) alcanza el umbral de éxito, aunque de forma ajustada, coherente con la idea de que el tutor \textit{reduce} la dependencia del docente sin sustituirlo completamente. La \textbf{usabilidad/claridad} (D3=3.67) y la \textbf{aceptación/intención} (D4=3.67) son globalmente positivas, si bien con mayor dispersión, lo que sugiere variabilidad individual en preferencia frente a la enseñanza tradicional.
+\todo {Resumen de las 4 dimensiones}
+
+\section{Discusión}
+\subsection{Eficacia del aprendizaje}
+El test de contenidos muestra un rendimiento alto y consistente, con una media de 9.2/10 y ausencia de resultados bajos. En el marco del diseño experimental, este hallazgo indica que, en esta primera iteración y bajo condiciones controladas, el tutor IA es \textbf{capaz de apoyar eficazmente la adquisición de los contenidos curriculares} de la Lección 2. El cumplimiento holgado del criterio (media $\geq 7/10$) sugiere viabilidad pedagógica inicial del tutor para el objetivo de ``enseñar eficazmente los contenidos''.
+
+\subsection{Personalización percibida}
+Las puntuaciones del cuestionario reflejan una percepción alta de personalización (aprox.\ 4.33/5), lo que está alineado con el propósito del tutor IA de adaptarse a necesidades individuales. En términos prácticos, los alumnos reportan que el tutor acompaña el ritmo personal y ofrece alternativas cuando aparece dificultad, reforzando la propuesta del diseño de \textbf{incrementar la personalización del aprendizaje}.
+
+\subsection{Autonomía del alumno}
+La autonomía se sitúa aproximadamente en 3.5/5, cumpliendo el criterio mínimo, aunque con menor holgura que la personalización. Esta diferencia es informativa: los datos sugieren que el tutor \textbf{reduce la dependencia del profesor} pero no la elimina completamente, lo cual resulta coherente con la regla explícita del diseño: el tutor no sustituye al profesor, sino que busca reducir su carga. En una primera iteración, alcanzar el umbral de autonomía puede considerarse un resultado satisfactorio, a la vez que identifica un espacio claro de mejora (p.\ ej., reforzar estrategias de andamiaje para resolución de dudas sin intervención docente).
+
+\subsection{Coherencia interna de los resultados}
+La combinación de un alto desempeño en el test de contenidos con percepciones positivas de personalización y autonomía aporta evidencia convergente a favor de la \textbf{viabilidad inicial} del tutor IA. Es relevante que los resultados más fuertes se observan en aprendizaje (rendimiento) y personalización, mientras que la autonomía aparece como la dimensión más ``sensible'' (cumplimiento ajustado), lo que puede orientar las prioridades de refinamiento del sistema en la siguiente iteración.
+
+\section{Conclusiones del experimento (primera iteración)}
+Con base en los instrumentos disponibles y los criterios del diseño experimental, se concluye que:
+
+\begin{enumerate}[leftmargin=*, itemsep=4pt]
+  \item \textbf{Aprendizaje efectivo:} El criterio se cumple ampliamente (media 9.2/10 $\geq$ 7/10). El tutor IA permitió una adquisición sólida de los contenidos evaluados.
+  \item \textbf{Personalización:} El criterio se cumple con holgura (promedio aprox.\ 4.33/5 $\geq$ 3.5/5). Los alumnos perciben adaptación y flexibilidad.
+  \item \textbf{Autonomía:} El criterio se cumple de forma ajustada (promedio aprox.\ 3.5/5). El tutor favorece el trabajo autónomo, aunque persisten necesidades puntuales de apoyo docente.
+  \item \textbf{Viabilidad:} En conjunto, los datos apoyan la viabilidad pedagógica del tutor IA para continuar con iteraciones posteriores, manteniendo el enfoque de reducir carga docente y aumentar personalización, con especial atención a reforzar la autonomía.
+\end{enumerate}
+
+\section{Limitaciones de esta iteración}
+Este informe se limita a los dos instrumentos disponibles. Además:
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item El tamaño muestral es reducido y propio de una validación piloto.
+  \item No se dispone de pre-test, grupo de control ni medidas longitudinales; por tanto, los resultados deben interpretarse como evidencia preliminar de viabilidad.
+  \item El cuestionario cuantitativo de alumnos cuenta con N=3 respuestas en los datos proporcionados, lo que aconseja cautela adicional al generalizar percepciones.
+\end{itemize}
+
+\section{Trabajo futuro (alineado con el diseño)}
+Para iteraciones posteriores, y siguiendo el propio diseño experimental, se recomienda:
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item Completar la recogida sistemática del cuestionario del profesor y la evaluación cualitativa grupal, para triangular resultados.
+  \item Incrementar N y, si procede, incorporar condiciones comparativas (p.\ ej., con instrucción tradicional o recursos estáticos), manteniendo la coherencia con los objetivos del diseño.
+  \item Profundizar en mejoras orientadas a autonomía (p.\ ej., guías de resolución, clarificación de objetivos, y estrategias de verificación de comprensión) sin perder personalización.
+\end{itemize}
+
+\section*{Material de referencia interno}
+Este informe se basa exclusivamente en el diseño experimental y en los ficheros de resultados proporcionados para esta iteración.
+% Nota: No se incluyen citas externas ni bibliografía.
+
+\end{document}
